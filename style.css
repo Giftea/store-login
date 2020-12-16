@@ -9,7 +9,6 @@
     filter: saturate(30%);
     background-position: center;
     background-size: cover;
-    /* height: 150vh; */
     width: 100vw;
     display: flex;
     justify-content: center;
