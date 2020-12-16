@@ -1,0 +1,147 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.screen-container{
+    background-image: url( "iris-wang-GxU6Eg_VchU-unsplash.jpg");
+    filter: saturate(30%);
+    background-position: center;
+    background-size: cover;
+    /* height: 150vh; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen-container.login{
+    height: 100vh;
+}
+
+.login-container{
+    background-color:  hsl(201, 100%, 6%, 0.6);
+    padding: 50px 30px;
+    width: 50%;
+    max-width: 600px;
+}
+
+.login-title{
+    text-align: center;
+    color: white;
+    margin: 0%;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+/* login form */
+.input-login-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-login-group label {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+
+}
+
+.input-login-group input{
+    background-color: hsl(201, 100%, 91%, 0.3);
+    border: 1px solid hsl(201, 100%, 6%);
+    outline: none;
+    font-size: 1.5em;
+    padding: 0.1em 0.25em;
+    border-radius: 5px;
+    color: white;
+    font-weight: lighter;
+
+}
+
+.input-login-group input:focus{
+    border: 1px solid hsl(201, 100%, 50%);
+}
+
+.login-btn{
+    border:1px solid hsl(201, 100%, 50%);
+    outline: none;
+    background-color: hsl(201, 100%, 50%, 0.1);
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: lighter;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-btn:hover{
+    background-color:  hsl(201, 100%, 50%, 0.3);
+}
+
+.login-btn:focus{
+    background-color:  hsl(201, 100%, 50%, 0.5);
+}
+
+/* sign up form */
+.input-group{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+
+
+.input-group label {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+
+}
+
+.input-group input{
+    background-color: hsl(201, 100%, 91%, 0.3);
+    border: 1px solid hsl(201, 100%, 6%);
+    outline: none;
+    font-size: 1.5em;
+    padding: 0.1em 0.25em;
+    border-radius: 5px;
+    color: white;
+    font-weight: lighter;
+  
+}
+
+@media screen and (max-width:900px){
+
+    .login-container{
+   
+        width: 80%;
+       
+    }
+
+}
+
+@media screen and (max-width:600px){
+
+    .login-container{
+   
+        width: 100%;
+       
+    }
+
+    .login-container.login-main{
+   
+       height: 100vh;;
+       
+    }
+
+}
+
