@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+
+<body>
+    <header id="home" class="header">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="navigation container">
+                <div class="logo">
+                    <h1>Online Store</h1>
+                </div>
+
+                <div class="menu">
+                    <div class="top-nav">
+                        <div class="logo">
+                            <h1>Codevo</h1>
+                        </div>
+                        <div class="close">
+                            <i class="bx bx-x"></i>
+                        </div>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link scroll-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product.html" class="nav-link">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link scroll-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link scroll-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button onclick="logOut()" class="sugesstion-btn">Log Out</button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="cart.html" class="cart-icon">
+                    <i class="bx bx-shopping-bag"></i>
+                </a>
+
+                <div class="hamburger">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </div>
+        </nav>
+
+        <form id="suggest">
+            <h1>
+                ADD SUGGESTION
+            </h1>
+
+            <label>
+                Item name
+                <input type="text" name="itemName">
+            </label>
+
+            <label>
+                Item Category
+                <select name="itemCategory">
+                    <option value="electronics">Electronics</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="furniture">Funiture</option>
+                </select>
+            </label>
+
+
+            <label>
+                Item Description
+                <textarea name="itemDescription" cols="30" rows="3"></textarea>
+            </label>
+            <label>
+                Reason
+                <textarea name="reason" cols="30" rows="6"></textarea>
+            </label>
+            <p id="err" style="font-size: 16; margin-top: 10; margin-bottom: 10;"></p>
+            <button type="submit" class="sugesstion-btn">Add a suggestion</button>
+        </form>
+        <div id="loader">
+            <img src="img/load.svg" />
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

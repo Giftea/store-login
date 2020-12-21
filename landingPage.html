@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store</title>
+  <link rel="stylesheet" href="sty.css">
+</head>
+
+<body>
+  <header id="home" class="header">
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="navigation container">
+        <div class="logo">
+          <h1>Online Store</h1>
+        </div>
+
+        <div class="menu">
+          <div class="top-nav">
+            <div class="logo">
+              <h1>Codevo</h1>
+            </div>
+            <div class="close">
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link scroll-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link scroll-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link scroll-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button onclick="logOut()" class="sugesstion-btn">Log Out</button>
+            </li>
+            <li class="nav-item">
+              <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1>Welcome!</h1>
+      <h3>We Will Be Launching Soon :)</h3>
+      <h4>Add a suggestion so we can serve you better</h4>
+    </div>
+
+
+    <div id="suggest">
+
+      <a href="addSuggestion.html">
+        <button class="sugesstion-btn">Add a suggestion</button>
+      </a>
+
+      <div class="filter">
+        <label>
+          Filter Suggestion
+          <select onchange="filterSuggestions(event)">
+            <option value="https://jsminnastore.herokuapp.com/suggested" selected>All</option>
+            <option value="https://jsminnastore.herokuapp.com/suggested/electronics">Electronics</option>
+            <option value="https://jsminnastore.herokuapp.com/suggested/groceries">Groceries</option>
+            <option value="https://jsminnastore.herokuapp.com/suggested/furnitures">Furnitures</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <section class="suggestion-table">
+      <section class="center">
+        <h1>Suggestions</h1>
+        <div id="center-loader">
+          <img src="img/load.svg" alt="">
+        </div>
+        <div id="table-data" class="table__wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="row">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Description</th>
+                <th scope="col">Reason</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+          </table>
+        </div>
+
+        <p id="err">
+        </p>
+      </section>
+
+      <div style="height: 80px;"></div>
+  </header>
+
+
+  </section>
+  <div id="loader">
+    <img src="img/load.svg" />
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

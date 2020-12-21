@@ -1,49 +1,61 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="screen-container">
         <div class="login-container">
             <h3 class="login-title">Welcome</h3>
-            <form action="">
+            <form id="signUpForm">
                 <div class="input-group ">
                     <label for="name">Full Name</label>
-                    <input type="email">
+                    <input required type="text" name="fullName">
                 </div>
-                <div class="input-group ">
+                <div required class="input-group ">
                     <label for="email">Email</label>
-                    <input type="email">
+                    <input type="email" name="email">
                 </div>
                 <div class="input-group">
-                    <label >Mobile Number</label>
-                    <input >
-                </div>
-                <div class="input-group ">
-                    <label >Address</label>
-                    <input >
+                    <label>Mobile Number</label>
+                    <input required type="number" name="mobileNumber">
                 </div>
                 <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email">
+                    <label>Address</label>
+                    <input name="address">
                 </div>
+                <div class="input-group">
+                    <select class="gender-select" required name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
                 <div class="input-group">
                     <label>Password</label>
-                    <input type="password">
+                    <input required type="password" name="password">
                 </div>
-                <div class="input-group">
+                <!-- <div class="input-group">
                     <label>Confirm Password</label>
                     <input type="password">
-                </div>
+                </div> -->
                 <button type="submit" class="login-btn">Sign Up</button>
             </form>
-            <div class="options"><p>Already have an account? <a href="index.html">Sign In</a></p></div>
-            
+            <div class="options">
+                <p>Already have an account? <a href="index.html">Sign In</a></p>
+            </div>
+
         </div>
     </div>
-    
+    <div id="loader">
+        <img src="img/load.svg" />
+      </div>
+    <script src="auth.js"></script>
 </body>
+
 </html>

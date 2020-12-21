@@ -1,29 +1,38 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div id="signUpForm"></div>
     <div class="screen-container login">
         <div class="login-container login-main">
             <h3 class="login-title">Welcome</h3>
-            <form action="">
+            <form id="loginForm" >
                 <div class="input-login-group">
                     <label for="email">Email</label>
-                    <input type="email">
+                    <input type="email" name="email">
                 </div>
                 <div class="input-login-group">
                     <label>Password</label>
-                    <input type="password">
+                    <input type="password" name="password">
                 </div>
                 <button type="submit" class="login-btn">Sign In</button>
             </form>
-            <div class="options"><p>Don't have an account? <a href="signUp.html">Sign Up</a></p></div>
+            <div class="options">
+                <p>Don't have an account? <a href="signUp.html">Sign Up</a></p>
+            </div>
         </div>
-        
+
     </div>
-    
+    <div id="loader">
+        <img src="img/load.svg" />
+      </div>
+    <script src="auth.js"></script>
 </body>
+
 </html>
