@@ -75,7 +75,7 @@ el("signUpForm").addEventListener("submit", (e) => {
   const data = {
     fullName: elem.fullName.value,
     email: elem.email.value,
-    mobileNumber: elem.mobileNumber.value,
+    ["mobile-number"]: elem.mobileNumber.value,
     address: elem.address.value,
     gender: elem.gender.value,
     password: elem.password.value,
